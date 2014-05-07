@@ -21,19 +21,15 @@ in its UIViewController subclass.
 7. When this button is pressed, the second storyboard should appear. To
 make this happen (we are doing it programatically) put the following
 into the implementation of the action you just created:
-
-```
-[self performSegueWithIdentifier:@"nameOfTheSegueBetweenOneAndTwo" sender:self];
-```
+    
+        [self performSegueWithIdentifier:@"nameOfTheSegueBetweenOneAndTwo" sender:self];
 
 8. Create a second method in the implemention of the first view
 controller with the following:
-
-```
-- (IBAction)returnToStepOne:(UIStoryboardSegue *)segue {
-    NSLog(@"And now we are back.");
-}
-```
+    
+        - (IBAction)returnToStepOne:(UIStoryboardSegue *)segue {
+            NSLog(@"And now we are back.");
+        }
 
 9. This method will work to unwind any view controller back to this view
 controller. Notice that we implement the method *in the view controller
@@ -53,9 +49,10 @@ it.
 11. In your storyboard's document outline, find the section for the
 second view controller. You should see an item listed below it with a
 grey symbol that says something like "Unwind segue from ... to Exit."
-Click on this item.
+Click on this item.  
+    
+    **Important and easily missed step follows!**
 
-*Important and easily missed step follows!*
 12. On the right side of your storyboard, in the attributes inspector,
 you should see two fields. One for 'Identifier' and one for 'Action'.
 In most cases, the 'Action' field will have the text 'returnToStepOne:',
@@ -69,9 +66,7 @@ IBAction in its UIViewController subclass.
 14. In the implementation for the method you just created, put the
 following code:
 
-```
-[self performSegueWithIdentifier:@"returnToStepOne" sender:self];
-```
+        [self performSegueWithIdentifier:@"returnToStepOne" sender:self];
 
 15. Run the application. You should now be able to unwind from the
 second view controller to the first.
