@@ -15,7 +15,7 @@ control+dragging from the first to the second.
 5. Click on the segue you created and give it an identifier in the
 attributes inspector.
 
-6. Make a button on he first view controller and link it to an IBAction
+6. Make a button on the first view controller and link it to an IBAction
 in its UIViewController subclass. 
 
 7. When this button is pressed, the second storyboard should appear. To
