@@ -39,7 +39,7 @@ we wish to return to*.
 If it is active, you should see a dark bar beneath it with 3 symbols on
 it. One of these is orange and when hovered over will show the name of
 the UIViewController subclass that this view controller represents.
-Control drag from this symbol woth the green symbol that means 'Exit'.
+Control drag from this symbol to the green (or red) symbol that means 'Exit'.
 You should see all available segue unwinds, which XCode automatically
 enumerates when you create segue unwind implementations inside
 UIViewController subclasses that you have shown on your stroryboard.
@@ -61,7 +61,7 @@ this field with the text: 'returnToStepOne' (note that we leave out
 the colon).
 
 13. Create a button on the second view controller and link it to an
-IBAction in its UIViewController subclass. 
+IBAction in its UIViewController subclass.
 
 14. In the implementation for the method you just created, put the
 following code:
